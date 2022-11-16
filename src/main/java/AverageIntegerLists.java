@@ -8,7 +8,9 @@ public class AverageIntegerLists {
     }
 
     public int sum(ArrayList<Integer> aa) {
-        return 0;
+        ArrayList<Integer>al = new ArrayList<>(aa);
+        al.add(0, aa.size());
+        return sum(aa);
     }
 
     public int average(ArrayList<Integer> aa) {

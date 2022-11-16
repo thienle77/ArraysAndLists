@@ -1,10 +1,11 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class AverageDoubleLists {
 
     // write out these too
     public Double count(ArrayList<Double> aa) {
-        return null;
+        return Arrays.stream(count
     }
     public Double sum(ArrayList<Double> aa) {
         return null;
