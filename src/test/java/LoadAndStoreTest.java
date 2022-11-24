@@ -2,6 +2,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class LoadAndStoreTest {
@@ -18,31 +21,43 @@ class LoadAndStoreTest {
 
     @Test
     void loadIntArrayFromFile() {
-        assertEquals(null, "");
+        ArrayList<Integer> expected = new ArrayList<>();
+        ArrayList<Integer> actual = new ArrayList<>();
+        assertEquals(expected, actual);
     }
 
     @Test
     void loadIntegerArrayListFromFile() {
-        assertEquals(null, "");
+        ArrayList<Integer> expected = new ArrayList<>();
+        ArrayList<Integer> actual = new ArrayList<>();
+        assertEquals(expected, actual );
     }
 
     @Test
     void loaddoubleArrayFromFile() {
-        assertEquals(null, "");
+        ArrayList<Double> expected = new ArrayList<>();
+        ArrayList<Double> actual = new ArrayList<>();
+        assertEquals(expected, actual);
     }
 
     @Test
     void loadDoubleArrayListFromFile() {
-        assertEquals(null, "");
+        ArrayList<Double> expected = new ArrayList<>();
+        ArrayList<Double> actual = new ArrayList<>();
+        assertEquals(expected, actual);
     }
 
     @Test
     void loadStringArrayFromFile() {
-        assertEquals(null, "");
+        ArrayList<String> expected = new ArrayList<>();
+        ArrayList<String> actual = new ArrayList<>();
+        assertEquals(expected, actual);
     }
 
     @Test
     void loadStringArrayListFromFile() {
-        assertEquals(null, "");
+        ArrayList<String> expected = new ArrayList<>();
+        ArrayList<String> actual = new ArrayList<>();
+        assertEquals(expected, actual);
     }
 }

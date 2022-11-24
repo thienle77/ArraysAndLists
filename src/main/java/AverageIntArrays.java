@@ -5,15 +5,23 @@ public class AverageIntArrays {
 // Complete these methods
 
     public int count(int[] aa) {
-        return (int) Arrays.stream(aa).count();
+        return aa.length;
     }
 
     public int sum(int[] aa) {
-        return Arrays.stream(aa).sum();
+        int sum = 0;
+        for(int i = 0; i < aa.length; i++){
+            sum = sum + aa[i];
+
+        }
+        return sum;
     }
 
     public int average(int[] aa) {
-        return (int) Arrays.stream(aa).average().orElse(Double.NaN);
+        if (aa.length == 0) {
+            return 0;
+        }
+        return sum(aa) / aa.length;
     }
 
 }
